@@ -1,0 +1,20 @@
+.footer {
+  padding: 28px 0 40px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.footer-inner a {
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.footer-inner a:hover {
+  color: var(--accent);
+}

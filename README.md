@@ -1,77 +1,54 @@
-# portfolio3
+# alangford.io — v4
 
-This is the third revision to my portfolio, this app was created to showcase my skills and projects I have worked on.
+Rebuilt on React 18 + Vite. Functional components, hooks, no Redux, no
+Material-UI. Plain CSS with a token system in `src/index.css`.
 
-## Getting Started
+## Run it locally
 
-### Prerequisites
-
-Must have [Node.js](https://nodejs.org/en/) version 8.4.0=> 
-
-
-### Installing
-
-Clone the repo
-
-```
-git clone https://github.com/bolty2142/portfolio3.git
-
+```bash
+npm install
+npm run dev
 ```
 
-Run 
+Then open the URL it prints (usually http://localhost:5173).
 
-```  yarn install  ```
+## Build for deploy
 
-Or 
+```bash
+npm run build
+```
 
-``` npm install ```
+Outputs static files to `dist/` — deploy that folder to S3 (or wherever
+you're hosting) the same way the old build was.
 
-## Development
+## Structure
 
-Run
+- `src/components/` — one component + matching `.css` file per section
+- `src/data/` — experience, competencies, and certifications content,
+  pulled from your resume. Edit these to update copy without touching
+  the components.
+- `src/assets/portrait.jpg` — your existing headshot, reused
+- `public/resume.pdf` — swap this file to update the downloadable résumé
+- `public/favicon.ico` — reused from the old repo; note it's actually a
+  PNG under the hood, not a real .ico. Works in most browsers but worth
+  regenerating properly at some point (e.g. via realfavicongenerator.net)
 
-``` yarn startDev ```
+## Things I could not verify
 
+I built this without network access in my sandbox, so I could not run
+`npm install` / `npm run build` myself. I reviewed every file by hand for
+syntax and import correctness, but please run the two commands above
+and let me know if anything breaks — happy to fix immediately.
 
-This will kick off the backend and start a development server that will update the frontend based on your changes
+## What changed from the old version
 
-
-## Running the tests
-
-Tests are ran with jest, To start the tests navigate into the frontend and run
-
- ``` yarn test ```
-
- Or
-
- ```npm test```
-
-
- If you run into this error 
-
- ``` node[73550] (FSEvents.framework) FSEventStreamStart: register_with_server: ERROR: f2d_register_rpc() => (null) (-22) ```
-
- You will have to  ``` brew install watchman ``` or reinstall watchman
-
-
-
-## Deployment
-
-This app is just a static webpage, once pushed to the master branch will be built and then pushed to the AWS S3 bucket where it's hosted 
-
-
-
-## Built With
-
-* [React v16.0.0](https://reactjs.org/) - The web framework used
-* [Redux](http://redux.js.org/) - State management
-* [Material-UI](https://material-ui-next.com) - Styling
-* [Jest](https://facebook.github.io/jest/) - Used to run tests
-
-
-
-## Authors
-
-* **Andrew Langford** - *inital work* - [GitHub Link](https://github.com/alangford)
-
-See also the list of [contributors](https://github.com/alangford/portfolio3/graphs/contributors) who participated in this project
+- React 16 class components + Redux + Material-UI v3 → React 18 function
+  components + hooks, no state library, custom CSS
+- Content rewritten around your current infrastructure/AWS background
+  instead of the old junior-developer bio
+- Old project links (Pong, Tetris, VR demo, W3Schools clone) dropped —
+  none were relevant to your current profile, and the subdomains they
+  pointed to may not even be live anymore
+- Twitter/Facebook links dropped; kept GitHub, LinkedIn, email, phone
+- New "service history" experience section styled like a status page,
+  each role expandable for detail
