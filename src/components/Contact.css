@@ -1,0 +1,84 @@
+.contact-intro {
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+}
+
+.console {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  max-width: 560px;
+  background: #0C1017;
+}
+
+.console-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.console-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--border);
+}
+
+.console-title {
+  margin-left: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--text-muted);
+}
+
+.console-body {
+  padding: 16px 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.console-line {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  padding: 9px 0;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-soft);
+  transition: color 0.2s ease;
+}
+
+.console-line:last-child {
+  border-bottom: none;
+}
+
+.console-line:hover {
+  color: var(--text-primary);
+}
+
+.console-line:hover .console-value {
+  color: var(--accent);
+}
+
+.console-prompt {
+  color: var(--status-operational);
+}
+
+.console-label {
+  color: var(--text-muted);
+  min-width: 64px;
+}
+
+.console-value {
+  color: var(--text-primary);
+  transition: color 0.2s ease;
+}
+
+.console-line-resume .console-value {
+  color: var(--accent);
+  font-weight: 500;
+}
