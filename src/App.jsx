@@ -3,7 +3,9 @@ import Hero from './components/Hero.jsx';
 import About from './components/About.jsx';
 import Experience from './components/Experience.jsx';
 import Competencies from './components/Competencies.jsx';
+import Projects from './components/Projects.jsx';
 import Certifications from './components/Certifications.jsx';
+import Writing from './components/Writing.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 
@@ -16,7 +18,9 @@ export default function App() {
         <About />
         <Experience />
         <Competencies />
+        <Projects />
         <Certifications />
+        <Writing />
         <Contact />
       </main>
       <Footer />

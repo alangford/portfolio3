@@ -27,7 +27,7 @@ export default function Hero() {
               View experience
             </a>
             <a className="btn" href="/resume.pdf" download>
-              Download résumé ↓
+              Download resume ↓
             </a>
           </div>
 

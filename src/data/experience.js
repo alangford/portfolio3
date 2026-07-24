@@ -21,6 +21,7 @@ export const experience = [
       "Identified structural inefficiencies across compute, storage, and account architecture that collectively saved client organizations millions of dollars in annual cloud spend.",
       "Led customers through high-severity production incidents, coordinating internal AWS teams and customer engineers to restore service within SLA and run the resulting root-cause reviews.",
       "Coached engineering teams on security baselines, high-availability design, and operational readiness, building internal capability to sustain those practices independently.",
+      "Represented AWS at re:Invent 2024, running the cloud governance booth and fielding architecture and governance questions from enterprise attendees.",
     ],
   },
   {

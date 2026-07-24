@@ -15,7 +15,7 @@ export default function Contact() {
     <section id="contact" className="section">
       <div className="container">
         <div ref={ref} className="reveal">
-          <p className="eyebrow">05 · contact</p>
+          <p className="eyebrow">07 · contact</p>
           <h2 className="section-heading">Let's talk infrastructure</h2>
           <p className="contact-intro">
             Reach out directly, or grab the full write-up below.
@@ -39,7 +39,7 @@ export default function Contact() {
               <a className="console-line console-line-resume" href="/resume.pdf" download>
                 <span className="console-prompt">$</span>
                 <span className="console-label">resume</span>
-                <span className="console-value">download résumé.pdf ↓</span>
+                <span className="console-value">download resume.pdf ↓</span>
               </a>
             </div>
           </div>

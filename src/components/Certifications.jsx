@@ -9,7 +9,7 @@ export default function Certifications() {
     <section id="certifications" className="section section-alt">
       <div className="container">
         <div ref={ref} className="reveal">
-          <p className="eyebrow">04 · certifications</p>
+          <p className="eyebrow">05 · certifications</p>
           <h2 className="section-heading">Credentials on file</h2>
 
           <ul className="cert-list">
