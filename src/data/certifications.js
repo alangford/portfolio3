@@ -1,4 +1,5 @@
 export const certifications = [
+  { name: 'AWS Certified AI Practitioner', date: 'Aug 2026' },
   { name: 'AWS Certified Solutions Architect – Professional', date: 'Jan 2024' },
   { name: 'AWS Certified DevOps Engineer – Professional', date: 'Aug 2023' },
   { name: 'AWS Certified Security – Specialty', date: 'Oct 2020' },
