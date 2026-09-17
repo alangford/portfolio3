@@ -1,4 +1,5 @@
 import portrait from '../assets/portrait.jpg';
+import { certifications } from '../data/certifications.js';
 import useReveal from '../useReveal';
 import './Hero.css';
 
@@ -37,7 +38,7 @@ export default function Hero() {
               <dd>years in AWS infrastructure</dd>
             </div>
             <div>
-              <dt>6</dt>
+              <dt>{certifications.length}</dt>
               <dd>AWS certifications</dd>
             </div>
             <div>
