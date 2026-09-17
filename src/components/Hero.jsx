@@ -5,7 +5,7 @@ import './Hero.css';
 
 export default function Hero() {
   const ref = useReveal();
-
+ 
   return (
     <section id="top" className="hero">
       <div className="container hero-inner">
